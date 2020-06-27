@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <h1>Estimation Tool For Screen Guard</h1>
+</head>
+<body>
+  <p>This tool will take your expected buying price, your estimation in percentage of total items being sold,
+    and it will give you the price at which you should sell per piece to even out your buying cost.
+  </p>
+  <form>
+    <label for="tbq">Total Buying Quantity:</label><br>
+    <input type="text" id="tbq" name="tbq"><br>
+
+    <label for="ppp">Price Per Piece:</label><br>
+    <input type="text" id="ppp" name="ppp"><br>
+
+    <label for="ac">Any Addtional Cost</label><br>
+    <input type="text" id="ac" name="ac"><br>
+
+    <label for="esl">Expected items to be sold in percentage</label><br>
+    <input type="text" id="esl" name="esl"><br>
+
+    <input type="button" onclick="Calculate()" value="Submit">
+  </form>
+  <script src="calculate.js"></script>
+
+  <p>RESULT:</p><br>
+  <p id="result"></p>
+
+</body>
+
+</html>
